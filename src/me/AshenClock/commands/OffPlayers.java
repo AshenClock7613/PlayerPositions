@@ -29,7 +29,6 @@ public class OffPlayers implements CommandExecutor {
                 Date data = new Date(p.getLastPlayed());
                 try {
                     String dir = System.getProperty("user.dir") + "/world/playerdata/";
-               //     NamedTag n = NBTUtil.read("/home/pi/Desktop/minecraft_1.17.1/world/playerdata/" + p.getUniqueId() + ".dat");
                     NamedTag n = NBTUtil.read(dir + p.getUniqueId() + ".dat");
                     CompoundTag c = (CompoundTag) n.getTag();
                     Tag<?> b = c.get("Pos");
