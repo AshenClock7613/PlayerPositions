@@ -1,0 +1,10 @@
+main: me.AshenClock.PlayerPositions
+name: PlayerPositions
+version: 1.0
+commands:
+  PlayerPositions:
+    description: Comando per restituire l'attuale posizione di tutti i Players
+    usage: /<command>
+  OffPlayers:
+    description: Comando per restituire l'ultima posizione di tutti i Player Offline
+    usage: /<command>
